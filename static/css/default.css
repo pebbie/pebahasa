@@ -1,0 +1,114 @@
+ul.menu{
+		list-style: none;
+	}
+	
+.menu li{
+		display: inline;
+		margin-left: 1em;
+	}
+	
+body{
+		font-family: tahoma, verdana, arial, sans-serif;
+		font-size:14px;
+		margin:0px;
+		padding:0px;
+	}
+	
+form.general{
+	padding: 8px;
+	width: 410px;
+	background-color: #eef;
+	margin: 0.5em 1em;
+	}
+	
+.formcaption{
+		text-align: center;
+		background-color: #ffe;
+		padding: 8px;
+		border: 1px solid #cca;
+	}
+	
+.formsection {
+		clear: both;
+		width: 400px;
+		height: auto;
+		min-height: 2em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+	
+label{
+		float: left;
+		width: 160px;
+		padding:4px;
+		text-align: right;
+	}
+	
+.general input, textarea, select{
+		float: left;
+		margin: 4px 0px 4px 10px;
+	}
+	
+input, textarea, select{
+		font: 1em arial, helvetica, sans-serif;
+		border: 1px solid #999;
+	}
+	
+.general input[type="submit"]{
+		float: right;
+		padding: 0.5em;
+		margin-right: 7px;
+	}
+	
+input:focus, textarea:focus, select:focus{
+		background-color: #eee;
+	}
+	
+table.datatable {
+		padding: 8px;
+		width: 100%;
+	}
+
+table.datatable th{
+		padding: 8px;
+		border-bottom: 2px solid #ccc;
+	}
+
+table.datatable td{
+		padding: 8px;
+		border-bottom: 1px solid #ccc;
+	}
+
+.itemview{
+		padding: 8px;
+		border: 1px solid #eee;
+	}
+	
+.message{
+		padding: 8px;
+		border: 1px solid #e00;
+		background-color: #eaa;
+		margin: 8px;
+		font-weight: bold;
+	}
+	
+.boxmenu{
+		text-align: left;
+	}
+	
+.right{
+		text-align: right;
+	}
+	
+#boxsearchbar{
+		margin-bottom: 1em;
+	}
+	
+#boxcontent{
+		text-align: left;
+		padding: 8px;
+	}
+	
+.action{
+		text-align: right;
+	}
