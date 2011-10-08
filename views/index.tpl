@@ -4,7 +4,6 @@
 	<head>
 		<title>{{apptitle}}</title>
 		<link rel="stylesheet" type="text/css" href="/static/css/{{css}}.css"/>
-        <script type="text/javascript" src="/static/js/jquery-1.6.2.min.js"></script>
 	</head>
 	<body>
 		<div id="content">{{!content}}</div>

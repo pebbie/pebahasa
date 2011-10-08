@@ -15,70 +15,31 @@
 # limitations under the License.
 #
 from bottle import *
-try:
-    from google.appengine.ext import webapp
-    from google.appengine.ext.webapp import util
-    isGAE = True
-except:
-    isGAE = False
-    pass
+from google.appengine.ext import webapp
+from google.appengine.ext.webapp import util
 import suku
 import os
-from hmmtagger import MainTagger
-from tokenization import sentence_extraction, tokenisasi_kalimat, cleaning
-
-mt = None
 
 @route('favicon.ico')
 def favicon():
-    return static_file('favicon.ico', root='static/')
+	return static_file('favicon.ico', root='static/')
 
 @route('/')
 def index():
     return template('index', apptitle='pebahasa', content=template('word_entry'))
     
 @post('/penggal')
-def penggal():
-    kata = request.forms.get('word', '').strip()
-    fon = suku.pecah(kata)
-    return template('index', apptitle='pebahasa', content='<div class="formsection">'+kata+" : <strong>"+"-".join(fon)+"</strong></div>")
-    
-@route('/tag')
-def postag():
-    return template('index', apptitle='pebahasa', content=template('sentence_tagging'))
-
-def init_tag():
-    global mt
-    if mt is None:
-        mt = MainTagger("resource/Lexicon.trn", "resource/Ngram.trn", 0, 3, 3, 0, 0, False, 0.2, 0, 500.0, 1)
-    
-@post('/tag')
-def do_tag():
-    response.content_type = 'text/plain'
-    lines = request.forms.get('teks', '').strip().split("\n")
-    result = []
-    try:
-        init_tag()
-        for l in lines:
-            if len(l) == 0: continue
-            out = sentence_extraction(cleaning(l))
-            for o in out:
-                strtag = " ".join(tokenisasi_kalimat(o)).strip()
-                result += [" ".join(mt.taggingStr(strtag))]
-    except:
-        return "Error Exception"
-    return "\n".join(result)
-    
+def query():
+	kata = request.forms.get('word', '').strip()
+	fon = suku.pecah(kata)
+	return template('index', apptitle='pebahasa', content='<div class="formsection">'+kata+" : <strong>"+"-".join(fon)+"</strong></div>")
+	
 @route('/static/:fname#.+#')
 def servestatic(fname):
-    return static_file(fname, root='static/')
+	return static_file(fname, root='static/')
 
 def main():
-    if isGAE:
-        util.run_wsgi_app(default_app())
-    else:
-        init_tag()
-        run(port=8088)
+    util.run_wsgi_app(default_app())
 
 if __name__ == '__main__':
     main()
