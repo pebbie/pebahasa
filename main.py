@@ -1,19 +1,4 @@
 #!/usr/bin/env python
-#
-# Copyright 2007 Google Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
 from bottle import *
 try:
     from google.appengine.ext import webapp
@@ -22,10 +7,15 @@ try:
 except:
     isGAE = False
     pass
-import suku
 import os
+
+import suku
 from hmmtagger import MainTagger
-from tokenization import sentence_extraction, tokenisasi_kalimat, cleaning
+from tokenization import *
+from html2text import *
+from termextract import *
+from summary import *
+from capschunking import *
 
 mt = None
 
@@ -34,18 +24,84 @@ def favicon():
     return static_file('favicon.ico', root='static/')
 
 @route('/')
+@view('newindex')
 def index():
-    return template('index', apptitle='pebahasa', content=template('word_entry'))
+    return { 'apptitle':'pebahasa', 'root':request.environ.get('SCRIPT_NAME') }
+    
+@post('/handler')
+def default_handler():
+    task = request.forms.get('task', '')
+    if task=='htmltext':
+        return do_html2text()
+    elif task=='extractterm':
+        return do_terms()
+    elif task=='summary':
+        return do_summary()
+    elif task=='postag':
+        return do_tag()
+    elif task=='capschunk':
+        return do_caps()
+    elif task=='sents':
+        return do_sents()    
+    response.content_type = 'text/plain'
+    return "NotImplemented"
+
+@post('/sents')    
+def do_sents():
+    response.content_type = 'text/plain'
+    lines = request.forms.get('teks', '').strip().split("\n")
+    result = []
+    for l in lines:
+        if len(l) == 0: continue
+        out = sentence_extraction(cleaning(l))
+        for o in out:
+            result.append(o)
+    return "<br/><br/>".join(result)
+    
+@post('/capschunk')    
+def do_caps():
+    response.content_type = 'text/plain'
+    lines = request.forms.get('teks', '').strip().split("\n")
+    result = []
+    for l in lines:
+        if len(l) == 0: continue
+        out = sentence_extraction(cleaning(l))
+        for o in out:
+            tmp = group_caps(o)
+            tmp = [" ".join(g) for g in tmp]
+            strtmp = "<br/>".join(tmp)
+            result.append(strtmp)
+    return "<br/><br/>".join(result)
+
+@post('/terms')
+def do_terms():
+    response.content_type = 'text/plain'
+    lines = request.forms.get('teks', '').strip()
+    return "<br/>".join(extract_terms(lines))
+    
+@post('/summary')
+def do_summary():
+    response.content_type = 'text/plain'
+    lines = request.forms.get('teks', '').strip()
+    return make_summary(lines)
+    
+@post('/html2text')
+def do_html2text():
+    response.content_type = 'text/plain'
+    lines = request.forms.get('teks', '').strip()
+    return get_text(lines)
     
 @post('/penggal')
+@view('index')
 def penggal():
     kata = request.forms.get('word', '').strip()
     fon = suku.pecah(kata)
-    return template('index', apptitle='pebahasa', content='<div class="formsection">'+kata+" : <strong>"+"-".join(fon)+"</strong></div>")
+    return { 'apptitle':'pebahasa', 'content':'<div class="formsection">'+kata+" : <strong>"+"-".join(fon)+"</strong></div>", 'root':request.environ.get('SCRIPT_NAME') }
     
 @route('/tag')
+@route('sentence_tagging')
 def postag():
-    return template('index', apptitle='pebahasa', content=template('sentence_tagging'))
+    return { 'apptitle':'pebahasa', 'root':request.environ.get('SCRIPT_NAME') }
 
 def init_tag():
     global mt
@@ -78,7 +134,7 @@ def main():
         util.run_wsgi_app(default_app())
     else:
         init_tag()
-        run(port=8088)
+        run(port=8088, reloader=True)
 
 if __name__ == '__main__':
     main()

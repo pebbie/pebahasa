@@ -9,7 +9,7 @@
     function getresult(){
         var param = {}
         param["teks"] = $("#teks").val()
-        $.post('/tag', param, function(data) {
+        $.post('{{root}}/tag', param, function(data) {
           $("#result").text(data)
         }
         );

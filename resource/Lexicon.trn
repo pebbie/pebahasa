@@ -120,6 +120,7 @@ dikenal VBT 4
 kegiatan NN 1
 mengurusi VBT 1
 pembentukan NN 3
+capres NN 1
 total NN 4
 membersihkan VBT 2
 unit NN 3
@@ -145,6 +146,7 @@ buruannya NNG 1
 gedung NN 5
 berani JJ 1
 mengusir VBT 1
+Golkar NNP 1
 Bangsa-Bangsa NN 3
 tawarannya NNG 1
 Untuk IN 1
@@ -267,7 +269,7 @@ Palmas NNP 2
 prematur JJ 1
 deflasi NN 1
 perannya NNG 2
-, , 616
+, , 621
 membujuk VBT 1
 hakim NN 2
 benteng NN 1
@@ -278,6 +280,7 @@ Jenderal NN 1
 Pato NNP 1
 dinobatkan VBT 2
 pembebasan NN 5
+umur JJ 1
 Mobile NNP 2
 jenis NN 5
 beban NN 2
@@ -395,6 +398,7 @@ Mesir NNP 2
 paket NN 1
 perintah NN 1
 gerak NN 2
+Kalla NNP 2
 karena CC 22
 hinggap VBI 1
 tren NN 3
@@ -463,7 +467,7 @@ dijelaskan VBI 1
 kepemilikan NN 2
 Tubagus NNP 1
 didirikan VBT 1
-yang SC 336
+yang SC 339
 implementasi NN 1
 maju VBI 2 JJ 1
 ketika SC 22
@@ -479,6 +483,7 @@ radio NN 2
 Darfur NNP 9
 Pertahanan NN 2
 baik JJ 10
+Umum JJ 1
 herbivora NN 1
 Utama NN 1
 bahwa SC 40
@@ -498,14 +503,14 @@ perang NN 5
 mulai VBI 1
 distribusi NN 1
 jumlah NN 4
-di IN 222
+di IN 223
 membayangkan VBI 1
 kaki NN 4
 preferred FW 1
 coast NNP 1 FW 1
 menyadarkan VBT 1
 merugikan VBT 1
-15 CDP 1
+15 CDP 2
 menawarakan VBT 1
 dr NN 1
 pelumas NN 2
@@ -533,7 +538,7 @@ Al-Assad NNP 1
 Jenewa NNP 1
 fungsi NN 2
 reaktor NN 2
-pada DT 1 IN 93
+pada DT 1 IN 95
 0,768 CDP 1
 padi NN 1
 disangkal VBT 1
@@ -611,7 +616,7 @@ lembaga-lembaga NN 1
 Richard NNP 1
 menawar VBT 1
 menangguhkan VBT 1
-. . 563
+. . 565
 partikel-partikel NN 2
 pimpinan NN 2
 petinggi NN 1
@@ -679,6 +684,7 @@ mengambil VBT 1
 Plaines FW 1
 Hubungan NN 1
 Bvudzijena NNP 1
+Sulawesi NNP 1
 soal NN 1
 yakin JJ 3
 nia NNP 1
@@ -759,7 +765,7 @@ pohon NN 1
 melihat VBT 8
 tirani NN 1
 58 CDP 1
-sering JJ 2
+sering JJ 3
 meregang VBT 1
 50 CDP 6
 Claudio NNP 1
@@ -818,6 +824,7 @@ kurang RB 5
 digunakan VBT 7
 diambil VBT 1
 terkini NN 1
+H. NN 1
 produk NN 7
 aliansi NN 1
 analisa NN 1
@@ -826,7 +833,7 @@ kbps NN 1
 Sultan NNP 1
 pendobrakan NN 1
 Hong NNP 1
-lahir VBI 3
+lahir VBI 4
 kapal-kapal NN 1
 memunyai VBT 1
 koneksi NN 1
@@ -867,7 +874,7 @@ Bambang NNP 1
 224 CDP 1
 Mercantile FW 1
 jaringan NN 4
-saja RB 4
+saja RB 5
 curang JJ 1
 tengah NN 6
 malaysia NNPP 1
@@ -875,6 +882,7 @@ mesin NN 1 VBT 1
 aneh JJ 1
 dampak NN 9
 lobato NNP 2
+Karya NNP 1
 Tony NNP 1
 menginterogasi VBT 1
 Electronic NNP 1
@@ -884,7 +892,7 @@ korban NN 2
 seorang NN 13
 diagnosa NN 1
 aorta NN 1
-<ENDTAG> <ENDTAG> 573
+<ENDTAG> <ENDTAG> 575
 komponen NN 2
 penyerang NN 1
 penumpasan NN 1
@@ -949,6 +957,7 @@ mill FW 1
 kawasan NN 8
 sejak IN 7
 dominasi NN 1
+1942 CDP 1
 turbin NN 1
 1945 CDP 1
 0 CDP 1
@@ -1049,7 +1058,7 @@ komite NN 1
 mengetahui VBI 3
 lokal JJ 1 NN 3
 bom NN 7
-( OP 10
+( OP 11
 flu NN 3
 IRNA NNP 1
 Inc NNP 1
@@ -1071,6 +1080,7 @@ Australia NNP 4
 akibat NN 2
 rendah JJ 6
 memori NN 2
+Bone NNP 1
 tewas JJ 4
 mengukir VBT 1
 ekspor NN 4
@@ -1102,7 +1112,7 @@ melebihi VBT 2
 Diegas NNP 1
 memasuki VBT 2
 irama NN 1
-bersama JJ 4 IN 5
+bersama JJ 4 IN 6
 menggapainya VBT 1
 Bursa NN 4
 pemerintahnya NNG 1
@@ -1150,7 +1160,7 @@ Average FW 1
 bioteknologi NN 3
 berada VBI 10
 data NN 2
-atau CC 32
+atau CC 34
 lifting FW 1
 berbagai CDI 5
 mengumumkan VBT 2
@@ -1214,6 +1224,7 @@ alternatif NN 1
 ketidakmampuan NN 1
 diperkenalkan VBT 1
 posisinya NNG 1
+Muhammad NNP 1
 Khalid NNP 1
 kecepatan NN 3
 kedelai NN 2
@@ -1352,6 +1363,7 @@ mematuhi VBT 2
 hukum NN 3
 pengawasannya NNG 1
 penuh JJ 1
+menjabat VBT 1
 250.000 CDP 1
 Rp3 CDP 2
 dipilih VBT 1
@@ -1361,7 +1373,7 @@ Kepulauan NN 1
 Rp9 CDP 2
 Funeral FW 1
 komersial JJ 2
-ditulis VBT 1
+ditulis VBT 2
 mr. NNP 1
 Serangan NN 1
 massa NN 1
@@ -1508,6 +1520,7 @@ Malaysia NNP 2
 Interest FW 1
 pemimpinnya NNG 1
 Mandiri NNP 4
+jK NNP 1
 mengingkari VBT 1
 EC155B1 CDP 1
 lintang NN 1
@@ -1599,7 +1612,7 @@ licin JJ 1
 hidrokarbon NN 1
 komunikasi NN 2
 darurat JJ 1
-sama JJ 16
+sama JJ 17
 penyakit NN 1
 tujuan NN 2
 mempunyai VBT 1
@@ -1702,6 +1715,7 @@ tolok NN 1
 keturunan NN 1
 melainkan CC 1
 gemuk JJ 1
+Golongan NNP 1
 konfirmasi NN 1
 berkemampuan VBI 1
 Hariri NNP 2
@@ -1750,7 +1764,7 @@ S.A. NNP 1
 kesempatan NN 1
 polisi-polisi NN 1
 of FW 3
-mantan NN 9
+mantan NN 10
 karam VBI 1
 dinding NN 1
 Universitas NN 2
@@ -1982,12 +1996,13 @@ november NN 3
 pendudukannya NNG 1
 kunang-kunang NN 1
 pengusaha NN 1
-Presiden NN 9
+Presiden NN 10
 14 CDP 1
+Wiranto NNP 1
 Tucson NNP 1
 Teluk NN 1
 amount FW 1
-tahun NN 44
+tahun NN 45
 dimulai VBT 5
 Demokrat NNP 1
 melatih VBT 1
@@ -2010,6 +2025,7 @@ coatings FW 1
 phising NN 1
 penciptaan NN 1
 Noerhadi NNP 1
+Watampone NNP 1
 Europa NNP 1
 pembicaraan-pembicaraan NN 1
 diperkenankan VBT 1
@@ -2020,7 +2036,7 @@ Efek NN 5
 6 CDP 2
 khas JJ 2
 Nixon NNP 1
-adalah VBT 16
+adalah VBT 17
 Asosiasi NN 1
 ditentukan VBT 1
 Coelacanth NN 1
@@ -2135,6 +2151,7 @@ Texas NNP 1
 pengulangan NN 2
 20 CDP 3
 21 CDP 3
+drs. NN 1
 23 CDP 1
 Diyala NNP 3
 3,5 CDP 1
@@ -2195,6 +2212,7 @@ relokasi NN 3
 bersamaan RB 1
 dikalahkan VBT 1
 mengunyah VBT 1
+Hanura NNP 1
 7 CDP 1
 kecolongan VBI 1
 leher NN 1
@@ -2274,7 +2292,7 @@ lingkaran NN 1
 terbatas VBI 2
 1910 CDP 1
 rekor NN 1
-Wakil NN 1
+Wakil NN 2
 hanya RB 14
 APBNP NN 3
 struktur NN 2
@@ -2385,6 +2403,7 @@ minum VBT 1
 terburuk JJ 1
 poin NN 2
 potensi NN 1
+69 CDP 1
 tambang NN 2
 nasional JJ 10
 Nuri NNP 2
@@ -2523,7 +2542,7 @@ milik NN 1 VBT 1
 kebuntuan NN 1
 Khan NNP 3
 sosialita NN 1
-<STARTTAG> <STARTTAG> 1146
+<STARTTAG> <STARTTAG> 1150
 terhadap IN 16
 von NNP 1
 8,25 CDP 1
@@ -2566,7 +2585,7 @@ bentrok VBI 1
 memulai VBT 4
 gambaran NN 1
 Teheran NNP 1
-Partai NN 1
+Partai NN 2
 menggelembung VBI 1
 Mulia NNP 1
 durasi NN 1
@@ -2718,7 +2737,7 @@ kekerasan NN 4
 mendarat VBI 1
 digitalnya NNG 1
 sinar NN 1
-dalam NN 1 IN 122
+dalam NN 1 IN 123
 menghantam VBT 1
 semester NN 2
 Photuris NNP 1
@@ -2751,6 +2770,7 @@ wakil NN 4
 perburuan NN 1
 presiden NN 9
 aksi NN 1
+Jusuf NNP 2
 Mars NNP 1
 Aviv NNP 1
 Prism NNP 1
@@ -2807,7 +2827,7 @@ berjaga-jaga VBI 1
 pembelanjaan NN 1
 menghilangkan VBT 3
 2008 CDP 4
-2009 CDP 2
+2009 CDP 4
 perempuan NN 1
 reaksi NN 3
 keji JJ 1
@@ -2875,6 +2895,7 @@ Al-Quran NNP 1
 Howard NNP 2
 Lebanon NNP 10
 Rumah NN 1
+JK NNP 1
 polusi NN 1
 diserap VBT 1
 State FW 1
@@ -2898,7 +2919,7 @@ dengan IN 137
 Link NNP 1
 apakah WP 4
 dimanja VBT 1
-; ; 1
+; ; 2
 Salihamidzic NNP 1
 sikat NN 1
 sikap NN 2
@@ -3090,7 +3111,7 @@ terbaru JJ 1
 memberangus VBT 1
 Hossein NNP 1
 antara IN 15
-dan CC 227
+dan CC 229
 operator NN 1
 meniru NN 1
 Parjo NNP 1
@@ -3102,7 +3123,7 @@ lanjut VBT 2
 bermotor VBI 1
 investor NN 3
 makanannya NNG 1
-Ketua NN 1
+Ketua NN 2
 proses NN 7
 tutankhamun NNP 1
 sepenuhnya RB 1
@@ -3126,7 +3147,7 @@ bumi NN 3
 segera RB 8
 ilmiah JJ 1
 berurutan VBI 1
-Mei NN 3
+Mei NN 4
 Garda NN 2
 menit NN 3
 tinggal VBI 2
@@ -3147,7 +3168,7 @@ Raja NN 2
 inggris NNP 1
 tingginya NNG 1
 pembaruan NN 1
-Indonesia NNP 29
+Indonesia NNP 30
 tenang JJ 2
 kecilnya NNG 1
 memahat VBT 1
@@ -3253,6 +3274,7 @@ Gerakan NN 1
 dilanda VBT 2
 awet JJ 1
 suku NN 4
+Pilpres NNP 1
 sisi NN 1
 interkoneksi NN 1
 PTBA NNP 3
@@ -3362,6 +3384,7 @@ internasional JJ 7
 RAF NNP 1
 menjulang VBI 1
 trilobita NNP 1
+– NN 1
 tangan NN 2
 luasnya JJ 1
 dieliminasi VBT 1
@@ -3455,13 +3478,13 @@ demi IN 2
 sekuriti NN 1
 menggeledah VBT 1
 Ariz. NNP 1
-2004 CDP 1
+2004 CDP 2
 terbentuk VBT 2
 Darwin NNP 1
 Return FW 2
 600 CDP 2
 pertanyaan NN 1
-) CP 10
+) CP 11
 komposisi NN 2
 pembom NN 1
 penderita NN 1
@@ -3489,7 +3512,7 @@ tetrapoda NN 1
 Sheikh NNP 1
 dibenarkan VBT 1
 jarak NN 1
-Selatan NN 3
+Selatan NN 4
 menanggapi VBT 4
 guna SC 6
 relatif JJ 3
@@ -3639,6 +3662,7 @@ komoditi NN 2
 menko NN 1
 menyelam VBI 1
 inner JJ 1
+diusung VBT 1
 keahlian NN 1
 dikuburkan VBT 1
 sisanya NNG 1
@@ -3664,7 +3688,7 @@ pemandangan NN 1
 chamisa NNP 1
 Margin FW 1
 sembilan CDP 1
-menjadi VBT 26
+menjadi VBT 27
 pusat NN 3
 dikabarkan VBT 2
 madu NN 2
@@ -3677,7 +3701,7 @@ Al-Hariri NNP 1
 siang NN 1
 seabad NN 1
 sukarela NN 1
-periode NN 2
+periode NN 3
 perioda NN 1
 tersedia VBI 2
 Bisnis NN 4

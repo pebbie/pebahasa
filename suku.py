@@ -1,3 +1,11 @@
+"""
+
+Suku kata
+
+Author: Peb Ruswono Aryan
+Description: breaks a word into phonemes
+
+"""
 import os, sys
 
 vokal = ['a', 'i', 'u', 'e', 'o']
